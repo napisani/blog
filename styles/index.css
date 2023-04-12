@@ -68,6 +68,7 @@ nav a {
 nav a:first-of-type {
     margin-left: 0;
 }
+
 strong, b {
     color: var(--heading-color);
 }
@@ -77,42 +78,6 @@ button {
     cursor: pointer;
 }
 
-content {
-    line-height: 1.6;
-}
-
-table {
-    width: 100%;
-}
-
-hr {
-    border: 0;
-    border-top: 1px dashed;
-}
-
-img {
-    max-width: 100%;
-}
-
-code {
-    font-family: monospace;
-    padding: 2px;
-    background-color: var(--code-background-color);
-    color: var(--code-color);
-    border-radius: 3px;
-}
-
-blockquote {
-    border-left: 1px solid #999;
-    color: var(--code-color);
-    padding-left: 20px;
-    font-style: italic;
-}
-
-footer {
-    padding: 25px 0;
-    text-align: center;
-}
 
 .title:hover {
     text-decoration: none;
@@ -120,20 +85,6 @@ footer {
 
 .title h1 {
     font-size: 1.5em;
-}
-
-.inline {
-    width: auto !important;
-}
-
-.highlight, .code {
-    padding: 1px 15px;
-    background-color: var(--code-background-color);
-    color: var(--code-color);
-    border-radius: 3px;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    overflow-x: auto;
 }
 
 /* blog post list */
@@ -152,39 +103,6 @@ ul.blog-posts li span {
 
 ul.blog-posts li a:visited {
     color: var(--visited-color);
-}
-
-
-button {
-    margin: 5px 0;
-}
-
-button.floating {
-    position: fixed;
-    bottom: 20px;
-    right: 25px;
-}
-
-button#toggle-full-screen {
-    float: right;
-}
-
-.helptext {
-    color: #777;
-    font-size: small;
-}
-
-.errorlist {
-    color: #eba613;
-    font-size: small;
-}
-
-#date-range{
-    display: none;
-}
-
-#date-range:target,{
-    display: block;
 }
 
 /* dashboard post list and analytics */
@@ -215,40 +133,6 @@ ul.post-list li a {
 ul.post-list li small {
     text-align: right;
     flex: 0 0 115px;
-}
-
-/* discovery feed */
-ul.discover-posts {
-    list-style-type: none;
-    padding: unset;
-}
-
-ul.discover-posts li {
-    display: flex;
-    line-height: 1.2;
-}
-
-ul.discover-posts li span {
-    flex: 0 0 40px;
-}
-
-ul.discover-posts li a:visited {
-  color: #8b6fcb;
-}
-
-ul.discover-posts li div {
-    padding-bottom: 8px;
-}
-
-ul.discover-posts li small span, ul.discover-posts li small span a {
-    color: #777 !important;
-}
-
-
-@media (prefers-color-scheme: dark) {
-    .helptext {
-        color: #aaa;
-    }
 }
 
 .navlink.active{

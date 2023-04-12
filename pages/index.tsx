@@ -12,8 +12,8 @@ export default function Index({ allPosts }: Props) {
     <>
       <Layout>
         <div>
-          &#128075; Hi, I'm <strong>Nick</strong>. I'm a software engineer, who loves the web and the command line equally. 
-          I'm constantly tinkering something new. This blog as attempt to slow down and share my learnings with the world.
+          &#128075; Hi, I&apos;m <strong>Nick</strong>. I&apos;m a software engineer, who loves the web and the command line equally. 
+          I&apos;m constantly tinkering something new. This blog as attempt to slow down and share my learnings with the world.
         </div>
       </Layout>
     </>

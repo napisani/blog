@@ -1,18 +1,24 @@
+import Link from 'next/link'
 import Logo from './logo'
 import SiteNav from './site-nav'
 
 const Header = () => {
   return (
     <header>
-      <a className="title" href="/">
+      <Link
+        as='/'
+        href="/"
+        className="title"
+      >
         <h1>
           <span className="font-normal">
             <div className="inline-block mr-4">
-              <Logo/>
+              <Logo />
             </div>
-            Nick Pisani</span>
+            Nick Pisani
+          </span>
         </h1>
-      </a>
+      </Link>
       <SiteNav></SiteNav>
     </header>
   )

@@ -15,7 +15,7 @@ const Layout = ({ children }: Props) => {
       <div>
         <main>
           <Head>
-            <title>Nick's Blog</title>
+            <title>Nick&apos;s Blog</title>
           </Head>
           <Header></Header>
           <Container>
