@@ -142,3 +142,6 @@ ul.post-list li small {
 .navlink.active{
   color: var(--visited-color);
 }
+.interests-list li{
+  margin-left:25px
+}

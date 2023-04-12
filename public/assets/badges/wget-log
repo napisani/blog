@@ -1,0 +1,11 @@
+--2023-04-12 15:47:29--  https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge
+Resolving img.shields.io (img.shields.io)... 172.64.132.6, 172.64.133.6, 2606:4700:e2::ac40:8406, ...
+Connecting to img.shields.io (img.shields.io)|172.64.132.6|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [image/svg+xml]
+Saving to: ‘typescript.svg’
+
+typescript.svg                   [<=>                                            ]       0  --.-KB/s               typescript.svg                   [ <=>                                           ]     514  --.-KB/s    in 0s      
+
+2023-04-12 15:47:29 (81.7 MB/s) - ‘typescript.svg’ saved [514]
+

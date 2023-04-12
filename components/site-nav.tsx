@@ -12,7 +12,6 @@ const SiteNav = () => {
     { path: '/projects', name: 'Projects' },
     { path: '/contact', name: 'Contact' },
   ];
-  console.log(pathname);
   return (
     <nav className="my-3">
       {paths.map((path, idx) =>
