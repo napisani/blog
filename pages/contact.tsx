@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export default function Contact() {
   return (
     <Layout>
+      <h1 className='title'>Contact Details</h1>
       <div className="container">
         <div className="content">
           <p>

@@ -4,7 +4,13 @@ import SectionSeparator from './section-separator'
 
 
 const ProjectLinkList = () => {
-  const procmux: Project = { title: 'test', date: '2020-01-01', url: 'https://google.com', excerpt: 'test' };
+  const procmux: Project = { 
+    title: 'Procmux', 
+    date: '2022-10-25', 
+    url: 'https://github.com/napisani/procmux', 
+    excerpt: 'a TUI utility for running multiple commands in parallel in easily switchable terminals',
+    tech: ['Python', "BASH"] 
+  };
   return (
     <div>
       <ul className="blog-posts">

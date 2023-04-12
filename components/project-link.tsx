@@ -1,27 +1,31 @@
 import Link from 'next/link'
 import Project from '../interfaces/project'
 import DateFormatter from './date-formatter'
+import TechBadge from './tech-badge'
 type Props = {
   project: Project
 }
 
 const ProjectLink = ({
- project 
+  project
 }: Props) => {
   return (
     <li>
-      <span className="whitespace-nowrap mr-4">
-        <i>
-          <DateFormatter dateString={project.date} />
-        </i>
-      </span>
-      <Link
-        as={project.url}
-        href={project.url}
-        className="hover:underline"
-      >
-        {project.title}
-      </Link>
+        <div className="inline-block">
+          <Link
+            as={project.url}
+            href={project.url}
+            className="hover:underline"
+          >
+            {project.title}
+          </Link>
+          <div>
+            <i>{project.excerpt}</i>
+          </div>
+          <div>
+            Techonology involved: {project.tech.map((tech) => <TechBadge tech={tech} key={tech}/>)}
+          </div>
+        </div>
     </li>
   )
 }

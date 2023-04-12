@@ -3,5 +3,6 @@ type Project = {
   date: string
   excerpt: string
   url: string
+  tech: string[]
 }
 export default Project;

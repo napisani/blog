@@ -11,6 +11,7 @@ type Props = {
 export default function Index({ allPosts }: Props) {
   return (
     <Layout>
+      <h1 className='title'>Blog Posts</h1>
       <BlogPostLinkList allPosts={allPosts} />
     </Layout>
   )
