@@ -1,29 +1,29 @@
 import Link from 'next/link'
-import PostType from '../interfaces/post'
+import Project from '../interfaces/project'
 import DateFormatter from './date-formatter'
 type Props = {
-  post: PostType
+  project: Project
 }
 
-const BlogPostLink = ({
-  post
+const ProjectLink = ({
+ project 
 }: Props) => {
   return (
     <li>
       <span className="whitespace-nowrap mr-4">
         <i>
-          <DateFormatter dateString={post.date} />
+          <DateFormatter dateString={project.date} />
         </i>
       </span>
       <Link
-        as={`/posts/${post.slug}`}
-        href="/posts/[slug]"
+        as={project.url}
+        href={project.url}
         className="hover:underline"
       >
-        {post.title}
+        {project.title}
       </Link>
     </li>
   )
 }
 
-export default BlogPostLink
+export default ProjectLink

@@ -1,5 +1,4 @@
 type Project = {
-  slug: string
   title: string
   date: string
   excerpt: string

@@ -11,7 +11,7 @@ export default function Contact() {
           <p>
             Feel free reach out regarding anything on this site, software in general, or just to say hi.
           </p>
-          <p className="font-mono mt-4">
+          <div className="font-mono mt-4">
             <div>Contact Info:</div>
             <ul className="ml-5">
               <li>
@@ -28,7 +28,7 @@ export default function Contact() {
                 </a>
               </li>
             </ul>
-          </p>
+          </div>
         </div>
       </div>
     </Layout>

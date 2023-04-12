@@ -7,7 +7,6 @@ import type Author from '../interfaces/author'
 type Props = {
   title: string
   date: string
-  author: Author
 }
 
 const PostHeader = ({ title,  date }: Props) => {
