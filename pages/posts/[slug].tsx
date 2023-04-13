@@ -13,10 +13,9 @@ import markdownToHtml from '../../lib/markdownToHtml'
 type Props = {
   post: PostType
   morePosts: PostType[]
-  preview?: boolean
 }
 
-export default function Post({ post, preview }: Props) {
+export default function Post({ post }: Props) {
   const router = useRouter()
   const title = `${post.title} | Nick's Blog`
   if (!router.isFallback && !post?.slug) {

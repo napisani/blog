@@ -1,6 +1,5 @@
 import Layout from '../components/layout'
 import TechBadge from '../components/tech-badge'
-import { getAllPosts } from '../lib/api'
 
 export default function Index() {
   return (

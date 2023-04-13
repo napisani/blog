@@ -1,6 +1,5 @@
 import Layout from '../../components/layout'
 import { getAllPosts } from '../../lib/api'
-import Head from 'next/head'
 import Post from '../../interfaces/post'
 import BlogPostLinkList from '../../components/blog-post-link-list'
 
