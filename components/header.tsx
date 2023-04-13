@@ -10,7 +10,7 @@ const Header = () => {
         href="/"
         className="title"
       >
-        <h1>
+        <h1 className="title">
           <span className="font-normal">
             <div className="inline-block mr-4">
               <Logo />

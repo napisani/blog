@@ -142,6 +142,13 @@ ul.post-list li small {
 .navlink.active{
   color: var(--visited-color);
 }
-.interests-list li{
-  margin-left:25px
+.fav-list{
+  margin-top: 1.5rem;
+}
+.fav-list li {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.fav-list-tech-badges {
+    margin-left: 2.5rem;
 }

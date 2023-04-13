@@ -11,10 +11,10 @@ export default function Index() {
         </div>
         <div className="interests-list">
           Here are some of my favoite techonlogies/interests:
-          <ul>
+          <ul className="fav-list">
             <li>
-              General purpose languages:
-              <div className="ml-4">
+              ⚙️  General purpose languages:
+              <div className="fav-list-tech-badges">
                 <TechBadge tech="TypeScript" />
                 <TechBadge tech="Rust" />
                 <TechBadge tech="Python" />
@@ -24,32 +24,33 @@ export default function Index() {
               </div>
             </li>
             <li>
-              Webapp techonlogies:
-              <div className="ml-4">
+              🌐  Webapp techonlogies:
+              <div className="fav-list-tech-badges">
                 <TechBadge tech="Next.js" />
                 <TechBadge tech="Vue.js" />
                 <TechBadge tech="Angular" />
               </div>
             </li>
             <li>
-              Developer Tools:
-              <div className="ml-4">
+              ⚒️  Developer Tools:
+              <div className="fav-list-tech-badges">
                 <TechBadge tech="neovim" />
               </div>
             </li>
             <li>
-              Cloud, DevOps and Infrastructure
-              <div className="ml-4">
+              ☁️  Cloud, DevOps and Infrastructure:
+              <div className="fav-list-tech-badges">
                 <TechBadge tech="Docker" />
                 <TechBadge tech="Kubernetes" />
               </div>
             </li>
             <li>
-              Backend techonlogies/frameworks:
-              <div className="ml-4">
+              🖼️  Backend techonlogies/frameworks:
+              <div className="fav-list-tech-badges">
                 <TechBadge tech="node.js" />
                 <TechBadge tech="nest.js" />
                 <TechBadge tech="springboot" />
+                <TechBadge tech="fastapi" />
               </div>
             </li>
           </ul>

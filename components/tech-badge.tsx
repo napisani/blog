@@ -1,3 +1,4 @@
+import classNames from "classnames"
 import Image from "next/image"
 
 const badges = [
@@ -16,17 +17,21 @@ const badges = [
   'nodejs',
   'kotlin',
   'nestjs',
-  'springboot'
+  'springboot',
+  'flutter',
+  'postgres',
+  'fastapi',
+  'sqlite'
 ].map(name => {
   const entry = {}
   entry[name] = '/assets/badges/' + name + '.svg'
   return entry
 }).reduce((acc, cur) => ({ ...acc, ...cur }), {})
-const TechBadge = ({ tech }: { tech: string }) => {
+const TechBadge = ({ className, tech }: { className?: string, tech: string }) => {
   const techCleaned = tech.toLowerCase().replace(/[^a-z0-9]/g, '')
   if (techCleaned in badges) {
     return (
-      <div className="inline-block m-1">
+      <div className={classNames('inline-block', 'm-1', className)}>
         <Image className="badge rounded w-auto h-full"
           width="0"
           height="0"

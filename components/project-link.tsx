@@ -22,7 +22,8 @@ const ProjectLink = ({
           <i>{project.excerpt}</i>
         </div>
         <div>
-          Techonology involved: {project.tech.map((tech) => <TechBadge tech={tech} key={tech} />)}
+          <div className='block'>Techonology involved:</div>
+          <div className='block'> {project.tech.map((tech) => <TechBadge className="align-middle" tech={tech} key={tech} />)}</div>
         </div>
       </div>
     </li>
