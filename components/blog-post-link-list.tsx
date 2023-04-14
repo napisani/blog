@@ -11,6 +11,7 @@ const BlogPostLinkList = ({
 }: Props) => {
   return (
     <div>
+      <span>coming soon...</span>
       <ul className="blog-posts">
         {allPosts.map((post, i) =>
           <BlogPostLink post={post} key={'post_link' + i} />

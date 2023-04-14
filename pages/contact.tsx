@@ -6,14 +6,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export default function Contact() {
   return (
     <Layout>
-      <h1 className='title'>Contact Details</h1>
+      <h1 className='page-title'>Contact Details</h1>
       <div className="container">
         <div className="content">
           <p>
             Feel free reach out regarding anything on this site, software in general, or just to say hi.
           </p>
-          <div className="font-mono mt-4">
-            <div>Contact Info:</div>
+
+          <h2 className="subtitle mt-6">Contact Info:</h2>
+          <div className="font-mono">
             <ul className="ml-5">
               <li>
                 <FontAwesomeIcon className="w-4 inline-block" icon={faEnvelope} size="sm" /> napisani88 [at] gmail [dot] com

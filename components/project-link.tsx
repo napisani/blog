@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Project from '../interfaces/project'
+import ProjectExtLink from './project-ext-link'
 import TechBadge from './tech-badge'
 type Props = {
   project: Project
@@ -10,16 +11,14 @@ const ProjectLink = ({
 }: Props) => {
   return (
     <li>
-      <div className="inline-block">
-        <Link
-          as={project.url}
-          href={project.url}
-          className="hover:underline"
-        >
-          {project.title}
-        </Link>
+      <div className="block">
+        <h2 className="subtitle">{project.title}</h2>
         <div>
           <i>{project.excerpt}</i>
+        </div>
+        <div>
+          <ProjectExtLink project={project} code={true} />
+          <ProjectExtLink project={project} code={false} />
         </div>
         <div>
           <div className='block'>Techonology involved:</div>

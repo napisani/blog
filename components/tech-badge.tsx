@@ -2,26 +2,28 @@ import classNames from "classnames"
 import Image from "next/image"
 
 const badges = [
-  'python',
-  'bash',
-  'rust',
-  'typescript',
-  'kubernetes',
-  'neovim',
-  'vuejs',
   'angular',
-  'nextjs',
+  'bash',
   'docker',
-  'lua',
-  'java',
-  'nodejs',
-  'kotlin',
-  'nestjs',
-  'springboot',
-  'flutter',
-  'postgres',
   'fastapi',
-  'sqlite'
+  'flutter',
+  'java',
+  'kotlin',
+  'kubernetes',
+  'lua',
+  'neovim',
+  'nestjs',
+  'nextjs',
+  'nodejs',
+  'postgres',
+  'primeng',
+  'python',
+  'rust',
+  'springboot',
+  'sqlite',
+  'threejs',
+  'typescript',
+  'vuejs',
 ].map(name => {
   const entry = {}
   entry[name] = '/assets/badges/' + name + '.svg'
@@ -36,6 +38,7 @@ const TechBadge = ({ className, tech }: { className?: string, tech: string }) =>
           width="0"
           height="0"
           src={'/assets/badges/' + techCleaned + '.svg'}
+          aria-label={tech}
           alt={tech} />
       </div>)
   }

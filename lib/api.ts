@@ -1,11 +1,13 @@
 import fs from 'fs'
 import { join } from 'path'
 import matter from 'gray-matter'
+import getProjects from '../_projects'
+import Project from '../interfaces/project'
 
 const postsDirectory = join(process.cwd(), '_posts')
 
 export function getPostSlugs() {
-  return fs.readdirSync(postsDirectory)
+  return fs.readdirSync(postsDirectory).filter((path) => !path.includes('_exclude'))
 }
 
 export function getPostBySlug(slug: string, fields: string[] = []) {
@@ -37,6 +39,9 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
   return items
 }
 
+export function getAllProjects(): Project[] {
+  return getProjects()
+}
 export function getAllPosts(fields: string[] = []) {
   const slugs = getPostSlugs()
   const posts = slugs
