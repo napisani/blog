@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import Project from '../interfaces/project'
 import ProjectExtLink from './project-ext-link'
 import TechBadge from './tech-badge'
