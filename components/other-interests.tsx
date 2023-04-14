@@ -2,7 +2,7 @@
 
 const OtherInterests = () => {
   return (<div className="interests-list">
-    Outside of software development, I&apos;m a...
+    <span className="subtitle">Outside of software development, I&apos;m a...</span>
     <ul className="fav-list">
       <li>
         🏎️ Car enthusiast

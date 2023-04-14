@@ -2,7 +2,7 @@ import TechBadge from "./tech-badge";
 
 const InterestList = () => {
   return (<div className="interests-list">
-    Here are some of my favoite techonlogies/interests:
+    <span className="subtitle"> Here are some of my favorite techonlogies/interests:</span>
     <ul className="fav-list">
       <li>
         ⚙️  General purpose languages:
