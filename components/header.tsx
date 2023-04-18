@@ -8,7 +8,7 @@ const Header = () => {
       <Link
         as='/'
         href="/"
-        className="title"
+        className="mb-4 hover:no-underline"
       >
         <h1 className="title">
           <span className="font-normal">

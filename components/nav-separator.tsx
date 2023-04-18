@@ -1,6 +1,6 @@
 const NavSeparator = ()=> {
   return (
-   <span className="nav-separator"> | </span> 
+   <span className="mx-2"> | </span> 
   );
 }
 export default NavSeparator;

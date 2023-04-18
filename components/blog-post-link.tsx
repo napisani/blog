@@ -9,8 +9,8 @@ const BlogPostLink = ({
   post
 }: Props) => {
   return (
-    <li>
-      <span className="whitespace-nowrap mr-4">
+    <li className="flex align-baseline py-4 border-dashed border-b-1">
+      <span className="whitespace-nowrap mr-4 flex-none w-40">
         <i>
           <DateFormatter dateString={post.date} />
         </i>

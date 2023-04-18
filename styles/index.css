@@ -18,6 +18,10 @@
 /* } */
 
 :root {
+    --width: 720px;
+    --font-main: Verdana, sans-serif;
+    --font-secondary: Verdana, sans-serif;
+    --font-scale: 1em;
     --background-color: #01242e;
     --heading-color: #eee;
     --text-color: #ddd;
@@ -56,13 +60,17 @@ body {
 .site-footer{
     background-color: var(--background-color);
 }
-
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-main);
     color: var(--heading-color);
 }
-.title {
-  margin-bottom: 1.5rem;
+.title:hover {
+    text-decoration: none;
+}
+
+h1.title {
+    font-size: 1.5em;
+    font-weight: 700;
 }
 .page-title {
     font-size: 2.0em;
@@ -75,24 +83,24 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     margin-bottom: 1.5rem;
 }
+
 a {
     color: var(--link-color);
     cursor: pointer;
     text-decoration: none;
 }
 
+a:visited {
+    color: var(--visited-color);
+}
+
 a:hover {
     text-decoration: underline; 
 }
 
-nav a {
-    margin-right: 8px;
-    margin-left: 8px;
+nav a:visited {
+    color: var(--link-color);
     
-}
-
-nav a:first-of-type {
-    margin-left: 0;
 }
 
 strong, b {
@@ -104,67 +112,10 @@ button {
     cursor: pointer;
 }
 
-
-.title:hover {
-    text-decoration: none;
-}
-
-h1.title {
-    font-size: 1.5em;
-    font-weight: 700;
-}
-
-/* blog post list */
-ul.blog-posts {
-    list-style-type: none;
-    padding: unset;
-}
-
-ul.blog-posts li {
-    display: flex;
-}
-
-ul.blog-posts li span {
-    flex: 0 0 130px;
-}
-
-ul.blog-posts li a:visited {
-    color: var(--visited-color);
-}
-
-/* dashboard post list and analytics */
-ul.post-list {
-    list-style-type: none;
-    padding: unset;
-}
-
-ul.post-list li {
-    display: flex;
-    align-items: baseline;
-    padding: 10px 0;
-    border-bottom: 1px dashed;
-}
-
-ul.post-list li span {
-    flex: 0 0 130px;
-}
-
-ul.post-list li span.number {
-    flex: 0 0 50px;
-}
-
-ul.post-list li a {
-    flex: max-content;
-}
-
-ul.post-list li small {
-    text-align: right;
-    flex: 0 0 115px;
-}
-
 .navlink.active{
   color: var(--visited-color);
 }
+
 .fav-list{
   margin-top: 1.5rem;
 }
@@ -174,4 +125,12 @@ ul.post-list li small {
 }
 .fav-list-tech-badges {
     margin-left: 2.5rem;
+}
+
+.logo-container{
+  @apply bg-gunmetal;
+}
+
+.logo{
+  @apply text-secondary;
 }
