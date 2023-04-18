@@ -9,7 +9,7 @@ const techs = {
   'java': 'https://java.com/',
   'fastapi': 'https://fastapi.tiangolo.com/',
   'kotlin': 'https://kotlinlang.org/',
-  'kubernetes': 'https://kotlinlang.org/',
+  'kubernetes': 'https://kubernetes.io/',
   'lua': 'https://www.lua.org/',
   'neovim': 'https://neovim.io/',
   'nestjs': 'https://nestjs.com/',
